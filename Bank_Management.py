@@ -1,14 +1,15 @@
 import mysql.connector
 import time as t
 
-import getpass
-password = getpass.getpass("Enter DB Password: ")
+# import getpass
+# password = getpass.getpass("Enter DB Password: ")
 
 try:
     con = mysql.connector.connect(
          host="localhost",
          user="root",
-         password=password,
+         # password=password,
+         password="pinku@123"
          database="Bank_system1"
         )
     if con.is_connected():
@@ -292,6 +293,7 @@ def call():
         else:
             print("❌ Invalid Option")
 call()            
+
 
 
 
