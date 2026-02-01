@@ -9,7 +9,7 @@ try:
          host="localhost",
          user="root",
          # password=password,
-         password="pinku@123"
+         password="pinku@123" # Enter your password
          database="Bank_system1"
         )
     if con.is_connected():
@@ -293,6 +293,7 @@ def call():
         else:
             print("❌ Invalid Option")
 call()            
+
 
 
 
